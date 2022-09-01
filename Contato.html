@@ -1,172 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title> Bússola Tour - Sobre Nós</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estiloproj.css">
+    <link rel="icon" href="./Imagens/bussola_logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Css/estiloproj.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-<!--Menu-->
+    <!--Menu-->
     <nav class="navbar navbar-light bg-primary navbar-expand-lg">
-        <a class="navbar-brand" href="Home.html">
+        <a class="navbar-brand" href="index.html">
             <img src="./Imagens/bussola_logo.png" width="30px">
             Bússola Tour
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="navegação">
-            <span class="navbar-toggler-icon"></span>    
-            </button>
-        
-            <div class="collapse navbar-collapse" id="menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="Destinos.html" class="nav-link">Destinos</a></li>
-                <li class="nav-item"><a href="Promocoes.html" class="nav-link">Promoções</a></li>
-                <li class="nav-item"><a href="Contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./Destinos.html" class="nav-link">Destinos</a></li>
+                <li class="nav-item"><a href="./Promocoes.html" class="nav-link">Promoções</a></li>
+                <li class="nav-item"><a href="./Contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item active"><a href="./login.html" class="nav-link">Entre ou Cadastre-se</a></li>
             </ul>
         </div>
     </nav>
+    <!--Menu-->
 
     <header class="ml-5 my-2">
-        <h2>Contato</h2>
-        <h6>Venha nos Conhecer!</h6>
+        <div class="tituloRevelar">
+            <h2>Contato</h2>
+            <h6>Venha nos Conhecer!</h6>
+        </div>
         <hr class="bg-primary">
     </header>
 
-    <br><br><br>
+    <main>
+        <section>
+            <h2 class=" ml-5 my-5 tituloRevelar">Nossas Lojas</h2>
 
-    <h2 id="filiais" class="ml-3">Nossas Lojas</h2>
-    <br>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Cidade</th>
-                <th scope="col">Endereço</th>
-                <th scope="col">Nº de Contato</th>
-                <th scope="col">Gerente Responsável</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo (Matriz)</th>
-                <td>Rua São Carlos, nº 150, Ed Paulista, Sala 60, Zona Leste</td>
-                <td>(11) 3334-2451</td>
-                <td>Carlos Andrade</td>
-            </tr>
+            <table class="table table-striped table-hover mb-5 tabelaRevelar">
+                <thead>
+                    <tr>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">Nº de Contato</th>
+                        <th scope="col">Gerente Responsável</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo (Matriz)</th>
+                        <td>Rua São Carlos, nº 150, Ed Paulista, Sala 60, Zona Leste</td>
+                        <td>(11) 3334-2451</td>
+                        <td>Carlos Andrade</td>
+                    </tr>
 
-            <tr>
-                <td>Salvador</th>
-                <td>Rua 11 de Maio, nº 30, Comércio</td>
-                <td>(71) 3506-2824</td>
-                <td>Adriana Santos</td>
-            </tr>
+                    <tr>
+                        <td>Salvador</th>
+                        <td>Rua 11 de Maio, nº 30, Comércio</td>
+                        <td>(71) 3506-2824</td>
+                        <td>Adriana Santos</td>
+                    </tr>
 
-            <tr>
-                <td>Rio de Janeiro</th>
-                <td>Rua Limoeiro, nº 320, Ed Primavera, Sala 150, Zona Sul</td>
-                <td>(21) 3648-1324</td>
-                <td>Roberta Marinho</td>
-            </tr>
+                    <tr>
+                        <td>Rio de Janeiro</th>
+                        <td>Rua Limoeiro, nº 320, Ed Primavera, Sala 150, Zona Sul</td>
+                        <td>(21) 3648-1324</td>
+                        <td>Roberta Marinho</td>
+                    </tr>
 
-            <tr>
-                <td>Aracaju</th>
-                <td>Rua de Baixo, nº 67, Areal</td>
-                <td>(79) 3134-2159</td>
-                <td>Jhonatas Silva</td>
-            </tr>
+                    <tr>
+                        <td>Aracaju</th>
+                        <td>Rua de Baixo, nº 67, Areal</td>
+                        <td>(79) 3134-2159</td>
+                        <td>Jhonatas Silva</td>
+                    </tr>
 
-            <tr>
-                <td>Curitiba</th>
-                <td>Rua Cinzal, nº 80, Centro</td>
-                <td>(41) 3316-2121</td>
-                <td>Cássio Freitas</td>
-            </tr>
-        </tbody>
-    </table>
-    <br><br>
+                    <tr>
+                        <td>Curitiba</th>
+                        <td>Rua Cinzal, nº 80, Centro</td>
+                        <td>(41) 3316-2121</td>
+                        <td>Cássio Freitas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <!--Box Fale conosco-->
+        <section>
+            <div class="container col-md-6 p-4" id="boxForm">
+                <header class="my-2 ml-3">
+                    <h2>Viajou Conosco?</h2>
+                    <h6>Nos conte como foi! Sua opinião é importante para tornar nosso serviço ainda melhor!</h6>
+                </header>
 
-<!--Box Fale conosco-->
-    <div class="container col-md-6 p-4" id="boxForm">
-        <header class="my-2 ml-3">
-            <h2>Viajou Conosco?</h2>
-            <h6>Nos conte como foi! Sua opinião é importante para tornar nosso serviço ainda melhor!</h6>
-        </header>
+                <form class="col-md-9 p-4">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" id="nome" class="form-control">
+                    </div>
 
-    
-        <form class="col-md-9 p-4">
-            <div class="form-group">
-                <label>Nome</label>
-                <input type="text" id="nome" class="form-control">
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea class="form-control" id="mensg"
+                            placeholder="Nos conte sua experiência aqui.."></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#resposta">Enviar</button>
+                </form>
             </div>
-    
-            <div class="form-group">
-                <label>E-mail</label>
-                <input type="email" id="email" class="form-control">
-            </div>
-    
-            <div class="form-group">
-                <label>Mensagem</label>
-                <textarea class="form-control" id="mensg" placeholder="Nos conte sua experiência aqui.."></textarea>
-            </div>
-    
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resposta">Enviar</button>
-    
-        </form>    
-    
-    </div>
 
-        
-    <div class="modal fade" tabindex="-1" role="dialog" id="resposta">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Formulário enviado com Sucesso!</h3>
+            <div class="modal fade" tabindex="-1" role="dialog" id="resposta">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Formulário enviado com Sucesso!</h3>
+                        </div>
+
+                        <div class="modal-bory">
+                            <p class="ml-2">Obrigado por compartilhar sua experiência!</p>
+                            <p class="ml-2">Sua opinião será levada para a nossa equipe para ser avaliada!</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="./index.html" class="btn btn-primary" role="button" aria-pressed="true">Página Inicial</a>
+                            <a href="./Contato.html" class="btn btn-primary" role="button" aria-pressed="true">Continuar na Página</a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="modal-bory">
-                    <p class="ml-2">Obrigado por compartilhar sua experiência!</p>
-                    <p class="ml-2">Sua opinião será levada para a nossa equipe para ser avaliada!</p>
-                </div>
-
-                <div class="modal-footer">
-                    <a href="Home.html" class="btn btn-primary" role="button" aria-pressed="true">Página Inicial</a>
-                    <button class="btn btn-primary" type="button" data-dismiss="modal">Continuar nessa página</button>
-                </div>
             </div>
-        </div>
-    </div> 
-       
-
+        </section>
+    </main>
 
     <!--Rodapé-->
-    <br><br><br>
-    <hr>
+    <hr class="mt-5">
     <footer class="container rodape">
-        <div class="container col-4" id="boxRedes">
-
-            <a href="#" class="ml-2"><img src="./Imagens/facebook_icon.png" width="40px" alt="ícone facebook"></a>
-
-            <a href="#" class="ml-2"><img  src="./Imagens/Instagram_icon.png" width="40px" alt="ícone instagram"></a>
-
-            <a href="#" class="ml-2"><img src="./Imagens/whatsapp_icon.png" width="40px" alt="ícone whatsapp"></a>
-    
-            <a href="#" class="ml-2"><img src="./Imagens/email_icon.png" width="40px" alt="ícone email"></a>
-
-            <a href="#" class="ml-2"><img src="./Imagens/telegram_icon.png" width="40px" alt="ícone telegram"></a>
-
-            <a href="#" class="ml-2"><img src="./Imagens/linkedin_icon.png" width="40px" alt="ícone linkedin"></a>
+        <div class="container col-4 mb-3" id="boxRedes">
+            <a href="#" class="ml-2"><img src="./Imagens/facebook_icon.png" width="40px" class="tamRedes" alt="ícone facebook"></a>
+            <a href="#" class="ml-2"><img src="./Imagens/Instagram_icon.png" width="40px" class="tamRedes" alt="ícone instagram"></a>
+            <a href="#" class="ml-2"><img src="./Imagens/whatsapp_icon.png" width="40px" class="tamRedes" alt="ícone whatsapp"></a>
+            <a href="#" class="ml-2"><img src="./Imagens/email_icon.png" width="40px" class="tamRedes" alt="ícone email"></a>
+            <a href="#" class="ml-2"><img src="./Imagens/telegram_icon.png" width="40px" class="tamRedes" alt="ícone telegram"></a>
+            <a href="#" class="ml-2"><img src="./Imagens/linkedin_icon.png" width="40px" class="tamRedes" alt="ícone linkedin"></a>
         </div>
-        <br>
-    
+
         <p>Proporcionado Viagens de Qualidade</p>
         <span>&copy;Bússola Tour</span>
+        <script src="./Scripts/ScrollReveal.js"></script>
     </footer>
 
-    
 </body>
+
 </html>
