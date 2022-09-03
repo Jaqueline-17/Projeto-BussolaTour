@@ -1,0 +1,44 @@
+CREATE DATABASE bussolaT;
+
+USE bussolaT;
+
+CREATE TABLE Cliente(
+	id_cliente int not null auto_increment primary key,
+    nome varchar(90) not null,
+    data_nasc Date,
+    sexo varchar(25),
+    CPF varchar(12),
+    telefone varchar(12),
+    email varchar(30) not null,
+    senha varchar(20) not null,
+)
+
+CREATE TABLE pacotes(
+	id_pacote int not null auto_increment primary key,
+    tipo varchar(25),
+    partida varchar(25) not null,
+    destino varchar(25) not null,
+    horario_saida time,
+    horario_chegada time,
+    transporte varchar(25)
+)
+
+CREATE table funcionarios(
+	id_funcionario  int not null auto_increment primary key,
+    nome varchar(90) not null,
+    nivel_de_acesso varchar(25) not null,
+    acesso varchar(25),
+    senha varchar(25)
+    )
+
+CREATE table pedidos(
+	id_pedido  int not null auto_increment primary key,
+    tipo_pacote varchar(25),
+    id_pacote int not null,
+    id_cliente int not null,
+    id_funcionario int not null,
+    
+    CONSTRAINT FK_id_pacote FOREIGN KEY (id_pacote) REFERENCES pacotes (id_pacote),
+    CONSTRAINT FK_id_cliente FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente),
+    CONSTRAINT FK_id_funcionario FOREIGN KEY (id_funcionario) REFERENCES funcionarios (id_funcionario)
+    );
