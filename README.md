@@ -5,4 +5,4 @@ Se trata de um site de uma agência de viagens fictícia, de nome Bússola Tour,
 
 Navegue através do GitHub Pages.
 
-![image](https://user-images.githubusercontent.com/105178774/184997540-2d5de4ca-8537-4090-9f56-02ff809c3d86.png)
+![image](https://user-images.githubusercontent.com/105178774/188521528-78210a08-f1c6-4aa7-ad3c-bd8719d2528a.png)
