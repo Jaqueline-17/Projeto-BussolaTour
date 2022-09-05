@@ -40,9 +40,3 @@ ScrollReveal().reveal('.tabelaRevelar', {
     reset: false
 })
 
-ScrollReveal().reveal('#menu', {
-    origin: "top",
-    distance: "60px",
-    delay: 500,
-    reset: false
-})

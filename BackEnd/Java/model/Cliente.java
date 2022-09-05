@@ -5,7 +5,7 @@ import java.util.Date;
 
 
 public class Cliente {
-	private int id;
+	private int id_cliente;
 	private String nome;
 	private Date dataNasc;
 	private String sexo;
@@ -15,13 +15,12 @@ public class Cliente {
 	private String senha;
 	
 	public Cliente() {
-		super();
 	}
 
-	public Cliente(int id, String nome, Date dataNasc, String sexo, String cpf, String telefone, String email,
+	public Cliente(int id_cliente, String nome, Date dataNasc, String sexo, String cpf, String telefone, String email,
 			String senha) {
 		super();
-		this.id = id;
+		this.id_cliente = id_cliente;
 		this.nome = nome;
 		this.dataNasc = dataNasc;
 		this.sexo = sexo;
@@ -32,19 +31,21 @@ public class Cliente {
 	}
 
 	public void mostarCliente() {
-	System.out.println("======== Cliente =========");
-	System.out.println("Cliente: " + this.nome + " id: " + this.id);
-	System.out.println("Nascimento: " + this.dataNasc);
+	System.out.println("==========");
+	System.out.println("Cliente: " + this.nome + " ID: " + this.id_cliente);
+	System.out.println("CPF: " + this.cpf);
 	System.out.println("Data de Nascimento: " + this.dataNasc);
-	System.out.println("Email: " + this.email + " Telefone: " + this.telefone);
+	System.out.println("Email: " + this.email + " Telefone: " + this.telefone + "\n");
+	//A senha não será mostrada por ser informação confudencial de acordo
+	// com a regra de negocio do projeto
 	}
 
-	public int getId() {
-		return id;
+	public int getId_Cliente() {
+		return id_cliente;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId_Cliente(int id_cliente) {
+		this.id_cliente = id_cliente;
 	}
 
 	public String getNome() {
@@ -101,6 +102,7 @@ public class Cliente {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+		
 	}
 
 }

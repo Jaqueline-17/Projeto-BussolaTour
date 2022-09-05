@@ -1,24 +1,37 @@
 package model;
 
 public class Funcionario {
-	private int id;
+	private int id_funcionario;
 	private String nome;
 	private String nivelAces;
 	private String acesso;
 	private String senha;
 	
+	public Funcionario() {
+	}
+
+	public Funcionario(int id_funcionario, String nome, String nivelAces, String acesso, String senha) {
+		super();
+		this.id_funcionario = id_funcionario;
+		this.nome = nome;
+		this.nivelAces = nivelAces;
+		this.acesso = acesso;
+		this.senha = senha;
+	}
+
 	public void mostrarFunc(){
-		System.out.println("======= Funcionário ========");
-		System.out.println("Nome: " + this.nome + " Id: " + this.id);
-		System.out.println("Nível de Acesso: " + this.nivelAces + " Acesso: " + acesso);
+		System.out.println("==========");
+		System.out.println("Nome: " + this.nome + " Id: " + this.id_funcionario);
+		System.out.println("Nível de Acesso: " + this.nivelAces);
+		System.out.println("Acesso: " + acesso + "\n");
 	}
 
-	public int getId() {
-		return id;
+	public int getId_Funcionario() {
+		return id_funcionario;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId_Funcionario(int id_funcionario) {
+		this.id_funcionario = id_funcionario;
 	}
 
 	public String getNome() {
@@ -52,6 +65,5 @@ public class Funcionario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
 	
 }

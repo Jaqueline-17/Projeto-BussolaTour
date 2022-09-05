@@ -42,8 +42,11 @@ body{
     flex-wrap: wrap;
 }
 
+.tamRedes{
+    border-radius: 25%;
+}
 .tamRedes:hover{
-    box-shadow: 3px 2px rgba(0, 0, 0, 0.329);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.377);
 }
 
 .tamanho_preco{

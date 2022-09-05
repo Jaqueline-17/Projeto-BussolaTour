@@ -42,3 +42,9 @@ CREATE table pedidos(
     CONSTRAINT FK_id_cliente FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente),
     CONSTRAINT FK_id_funcionario FOREIGN KEY (id_funcionario) REFERENCES funcionarios (id_funcionario)
     );
+
+create table mensagens(
+nome varchar(25),
+email varchar(25),
+texto text
+) 

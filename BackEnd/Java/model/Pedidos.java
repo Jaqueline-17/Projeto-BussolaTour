@@ -1,44 +1,44 @@
-package model;
+	package model;
 
 public class Pedidos {
-	private int id;
-	private String tipoPacote;
-	private int idPacote;
-	private int idCliente;
-	private int idFuncionario;
+	private int id_pedido;
+	private Pacote pacote;
+	private Cliente cliente;
+	private Funcionario funcionario;
 	
-	public int getIdPedido() {
-		return id;
-	}
-	public void setIdPedido(int id) {
-		this.id = id;
-	}
-	public String getTipoPacote() {
-		return tipoPacote;
-	}
-	public void setTipoPacote(String tipoPacote) {
-		this.tipoPacote = tipoPacote;
-	}
-	public int getIdPacote() {
-		return idPacote;
-	}
-	public void setIdPacote(int idPacote) {
-		this.idPacote = idPacote;
-	}
-	public int getIdCliente() {
-		return idCliente;
-	}
-	public void setIdCliente(int idCliente) {
-		this.idCliente = idCliente;
-	}
-	public int getIdFuncionario() {
-		return idFuncionario;
-	}
-	public void setIdFuncionario(int idFuncionario) {
-		this.idFuncionario = idFuncionario;
+	public Pedidos() {
 	}
 	
+	public Pedidos(Pacote pacote, Cliente cliente, Funcionario funcionario) {
+		this.pacote = pacote;
+		this.cliente = cliente;
+		this.funcionario = funcionario;
+	}
 	
-	
+	public int getId_Pedido() {
+		return id_pedido;
+	}
+	public void setId_Pedido(int id_pedido) {
+		this.id_pedido = id_pedido;
+	}
+
+	public Pacote getPacote() {
+		return pacote;
+	}
+	public void setPacote(Pacote pacote) {
+		this.pacote = pacote;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	public Funcionario getFuncionario() {
+		return funcionario;
+	}
+	public void setFuncionario(Funcionario funcionario) {
+		this.funcionario = funcionario;
+	}
 	
 }
