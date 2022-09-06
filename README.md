@@ -2,7 +2,8 @@
 Site feito com Html, Css, Bootstrap e JavaScript para o curso Recode Pro 2022
 
 Se trata de um site de uma agência de viagens fictícia, de nome Bússola Tour, contendo as páginas Home, Destinos, Contato, Promoções, Contato e Login.
-*Para acesar as modelagens de banco de dados é necessário baixar.
+
+*Para acesar as modelagens de banco de dados é necessário baixar os arquivos.
 
 Navegue através do GitHub Pages.
 
