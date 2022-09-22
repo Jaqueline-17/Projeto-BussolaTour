@@ -1,5 +1,5 @@
 # Projeto Bússola Tour
-Site feito com Html, Css, Bootstrap e JavaScript para o curso Recode Pro 2022
+Site feito com HTML, CSS, Bootstrap e JavaScript e modelo de console CRUD em JAVA para o curso Recode Pro 2022
 
 Se trata de um site de uma agência de viagens fictícia, de nome Bússola Tour, contendo as páginas Home, Destinos, Contato, Promoções, Contato e Login.
 
